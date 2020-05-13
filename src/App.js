@@ -38,7 +38,7 @@ function App() {
             </div>
           </div>
         </div>
-        <TransactionWidget/>
+        <TransactionWidget transactions={transactions}/>
         <TransactionSearchComponent serchTerm={searchTerm} onChange={setSearchTerm}/>
         <TransactionListComponent transactions={transactions}/>
       </div>

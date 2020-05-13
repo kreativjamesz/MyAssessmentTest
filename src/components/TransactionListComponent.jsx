@@ -3,6 +3,7 @@ import TransactionComponent from './TransactionComponent'
 
 const TransactionListComponent = ({transactions}) => {
 
+  
   return (
     <div className="row">
       <div className="col-md-12">
