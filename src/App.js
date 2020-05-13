@@ -3,8 +3,6 @@ import TransactionList from './components/TransactionList';
 import DateRangePicker from 'react-bootstrap-daterangepicker';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 
-import axios from 'axios';
-
 import './App.css';
 
 function App() {
@@ -54,7 +52,7 @@ function App() {
               <div className="card-body p-1">
                 <form action="" method="get" className="text-center">
                   <DateRangePicker startDate={startDate} endDate={endDate}>
-                    <button type="button" className="btn btn-link btn-block">
+                    <button type="button" className="btn btn-link btn-block text-secondary">
                       <div><FaRegCalendarAlt /> {startDate}{` to `}{endDate}</div>
                     </button>
                   </DateRangePicker>
@@ -71,19 +69,19 @@ function App() {
                   <div className="container">
                     <div className="row">
                       <div className="col">
-                        <div className="text-center">
+                        <div className="text-center text-secondary">
                           <div className="font-weight-normal txt-value-amount">0</div>
                           <div className="font-weight-bold txt-value-name">ACT</div>
                         </div>
                       </div>
                       <div className="col">
-                        <div className="text-center">
+                        <div className="text-center text-secondary">
                           <div className="font-weight-normal txt-value-amount">0</div>
                           <div className="font-weight-bold txt-value-name">HUG</div>
                         </div>
                       </div>
                       <div className="col">
-                        <div className="text-center">
+                        <div className="text-center text-secondary">
                           <div className="font-weight-normal txt-value-amount">0</div>
                           <div className="font-weight-bold txt-value-name">Prepaid</div>
                         </div>
